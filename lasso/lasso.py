@@ -18,4 +18,8 @@ def execute():
     print("Test set score: {:.2f}".format(lasso001.score(X_test, y_test)))
     print("Number of features used: {}".format(np.sum(lasso001.coef_ != 0)))
 
+    lasso00001 = Lasso(alpha=0.0001,max_iter=100000).fit(X_train,y_train)
+    print("Training set score: {:.2f}".format(lasso00001.score(X_train, y_train)))
+    print("Test set score: {:.2f}".format(lasso00001.score(X_test, y_test)))
+    print("Number of features used: {}".format(np.sum(lasso00001.coef_ != 0)))
 
