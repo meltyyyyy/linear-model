@@ -28,4 +28,4 @@ def execute():
     plt.ylabel("Coefficient magnitude")
     plt.ylim(-25,25)
     plt.legend()
-    plt.show()
+    plt.savefig("ridge/compare_ridge.png")
