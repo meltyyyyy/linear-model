@@ -20,6 +20,7 @@ def execute():
     print("Training set score: {:.2f}".format(ridge01.score(X_train, y_train)))
     print("Test set score: {:.2f}".format(ridge01.score(X_test, y_test)))
 
+    fig = plt.figure()
     plt.plot(ridge.coef_, 's', label="Ridge alpha=1")
     plt.plot(ridge10.coef_, '^', label="Ridge alpha=10")
     plt.plot(ridge01.coef_, 'v', label="Ridge alpha=0.1")
@@ -28,4 +29,4 @@ def execute():
     plt.ylabel("Coefficient magnitude")
     plt.ylim(-25,25)
     plt.legend()
-    plt.savefig("ridge/compare_ridge.png")
+    fig.savefig("ridge/compare_ridge.png")
