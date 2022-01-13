@@ -1,4 +1,4 @@
-from clf import linear_clf, logreg
+from clf import linear_clf, logreg, multi_clf
 from lasso import lasso
 from ols import ols
 from ridge import ridge
@@ -7,4 +7,5 @@ from ridge import ridge
 # ridge.execute()
 # lasso.execute()
 # linear_clf.execute()
-logreg.execute()
+# logreg.execute()
+multi_clf.execute()
